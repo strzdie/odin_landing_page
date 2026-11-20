@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 600 350">
+
+    <rect width="600" height="350" fill="#f8f4ea"/>
+
+    <defs>
+        <g id="fish">
+            <polygon points="20,25 0,5 0,45"/>
+            <ellipse cx="55" cy="25" rx="43" ry="20"/>
+            <circle cx="81" cy="20" r="3" fill="#f8f4ea"/>
+        </g>
+    </defs>
+
+    <!-- Blue fish swimming right -->
+    <use href="#fish" x="50" y="40" fill="#233f70"/>
+    <use href="#fish" x="210" y="30" fill="#233f70"/>
+    <use href="#fish" x="380" y="50" fill="#233f70"/>
+
+    <use href="#fish" x="90" y="125" fill="#233f70"/>
+    <use href="#fish" x="260" y="120" fill="#233f70"/>
+
+    <!-- Red fish swimming left -->
+    <use href="#fish"
+         transform="translate(410 175) rotate(180 50 25)"
+         fill="#bd3e45"/>
+
+    <use href="#fish" x="50" y="235" fill="#233f70"/>
+    <use href="#fish" x="220" y="260" fill="#233f70"/>
+    <use href="#fish" x="390" y="240" fill="#233f70"/>
+
+</svg>

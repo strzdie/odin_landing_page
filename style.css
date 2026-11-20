@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #263238;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header {
+    background-color: #233648;
+    color: white;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background-color: #344e65;
+    color: white;
+    padding: 90px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 480px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    background-color: #c2d8e8;
+    color: #233648;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #e0edf5;
+}
+
+
+.hero-image {
+    flex: 1;
+    width: 400px;
+    max-width: 100%;
+    background-color: #f8f4ea;
+    border: 3px solid #233f70;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.information {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.information h2 {
+    font-size: 36px;
+    margin: 0 0 45px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 180px;
+}
+
+.illustration {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border: 3px solid #7292aa;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #344e65;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+.quote {
+    background-color: #dce6ee;
+    padding: 100px 20px;
+}
+
+.quote-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+blockquote {
+    margin: 0;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.author {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+
+.signup-section {
+    padding: 85px 20px;
+}
+
+.signup-box {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #344e65;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.signup-box h2 {
+    margin-top: 0;
+}
+
+.signup-box p {
+    line-height: 1.5;
+}
+
+.signup-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.signup-button:hover {
+    background-color: white;
+    color: #233648;
+}
+
+/* Footer */
+footer {
+    background-color: #233648;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Keyboard Accessibility */
+a:focus-visible {
+    outline: 3px solid #f3c969;
+    outline-offset: 4px;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 20px;
+        gap: 35px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .information h2 {
+        font-size: 30px;
+    }
+
+    blockquote {
+        font-size: 28px;
+    }
+
+    .signup-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
